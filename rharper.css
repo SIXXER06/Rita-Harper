@@ -1,0 +1,184 @@
+body {
+  display: border-box;
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0; 
+  font-family: Georgia, serif;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  background-color: whitesmoke;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  
+}
+.left {
+  flex: 1;
+  padding-top: 75px;
+  padding-left: 10px;
+}
+nav h1 {
+  padding-left: 37px;
+  font-weight: 200;
+}
+#page {
+  color: #D4A017;
+}
+svg {
+  height: 25px;
+  width: 25px;
+}
+.links {
+  display: flex;
+}
+.upper-links {
+  flex-direction: column;
+}
+.lower-links {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: block;
+  height: 45px;
+  
+}
+.icon-links, svg {
+  padding-right: 25px;
+}
+.mid {
+  flex: 3;
+}
+header {
+  font-family: Arial, sans-serif;
+}
+header svg {
+  float: left;
+  padding-right: 10px;
+  margin-top: -4px;
+}
+.main-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  height: auto;
+  padding-top: 25px;
+}
+.column {
+  padding: 15px;
+}
+.right {
+ flex: 1;
+}
+.caption-text {
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: Garamond, serif;
+  font-weight: 50px;
+}
+.caption-src {
+  margin-top: -20px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 100px;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #111;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .container {
+    width: inherit;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .left {
+    padding-top: 0px;
+    margin: 0:
+    height: 100px;
+  }
+  h1 {
+    padding: 0;
+  }
+  nav {
+    height: 50px;
+    display: flex;
+    width: 100%;
+  }
+  .upperlinks {
+    display: flex;
+  }
+  ul {
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  li, svg{
+    padding: 25px 20px 20px 0px;
+    display: block;
+  }
+  .links {
+    flex-direction: row;
+  }
+  header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  nav {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .links {
+    display: flex;
+  }
+  .upper-links {
+    flex-direction: column;
+  }
+  .lower-links {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  li {
+  display: block;
+  height: 15px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+} 
